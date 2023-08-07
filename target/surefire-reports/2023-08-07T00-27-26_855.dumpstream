@@ -1,5 +1,0 @@
-# Created at 2023-08-07T00:27:30.899
-Boot Manifest-JAR contains absolute paths in classpath 'E:\cours java\intellij idea workspace\deployement-test\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-

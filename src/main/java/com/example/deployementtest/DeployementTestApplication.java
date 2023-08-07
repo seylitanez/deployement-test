@@ -16,6 +16,7 @@ public class DeployementTestApplication {
 
 	@RequestMapping("/")
 	public String home() {
+		System.out.println("salut tout le monde ceci est un test de depploiment api");
 		return "<h1>salut tout le monde ceci est un test de depploiment api</h1>";
 	}
 }
