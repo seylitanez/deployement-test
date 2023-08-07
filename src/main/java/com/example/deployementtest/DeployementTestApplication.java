@@ -10,13 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DeployementTestApplication {
 
+	static int nombreVisiteurs= 0;
+
 	public static void main(String[] args) {
 		SpringApplication.run(DeployementTestApplication.class, args);
 	}
 
 	@RequestMapping("/")
 	public String home() {
-		System.out.println("salut tout le monde ceci est un test de depploiment api");
-		return "<h1 style=\"background-color: red;\">salut tout le monde ceci est un test de depploiment api enfin docker itedu</h1>";
+		nombreVisiteurs++;
+		return "<h1 style=\"background-color: red;\">salut visiteur numero "+nombreVisiteurs+" ceci est un test de depploiment api enfin docker itedu</h1>";
 	}
 }
